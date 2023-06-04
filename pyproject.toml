@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "workout-generator"
+version = "0.1.0"
+description = "generate training programs for your strength workouts"
+authors = ["Gustav Collin Rasmussen"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "workout_generator"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Django = "^4.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
