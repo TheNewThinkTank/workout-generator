@@ -37,4 +37,8 @@ Django
 
 Run app: python manage.py runserver
 Then visit: http://127.0.0.1:8000/workoutapp/welcome_view/
+
+Run with Docker:
+docker build --tag python-django .
+docker run --publish 8000:8000 python-django
 -->
