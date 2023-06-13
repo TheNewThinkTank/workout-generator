@@ -4,6 +4,7 @@ generate training programs for your strength workouts
 <!--
 TODOs:
 Create a django view that takes a program generation request and returns a html training program response
+fix url: http://127.0.0.1:8000/workoutapp/nfp_view/
 
 Poetry virtual envs:
 - Create new poetry project:                   poetry init
