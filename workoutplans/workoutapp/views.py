@@ -6,4 +6,4 @@ def welcome_view(request):
 
 
 def nfp_view(request):
-    return render(request, "full_body_1.html")
+    return render(request, "pgm4_nfp/full_body_1.html")
