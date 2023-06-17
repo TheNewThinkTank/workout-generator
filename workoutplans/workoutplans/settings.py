@@ -55,8 +55,9 @@ ROOT_URLCONF = 'workoutplans.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, "workoutapp/templates"),
-                 os.path.join(BASE_DIR, "workoutapp/workout_templates"),
+        'DIRS': [
+            os.path.join(BASE_DIR, "workoutapp/templates"),
+            # os.path.join(BASE_DIR, "workoutapp/workout_templates"),
                  ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -122,7 +123,7 @@ STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "workoutapp/static"),
-    os.path.join(BASE_DIR, "workoutapp/workout_templates")
+    # os.path.join(BASE_DIR, "workoutapp/workout_templates")
 ]
 
 # Default primary key field type
