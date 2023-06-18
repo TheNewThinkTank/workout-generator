@@ -10,8 +10,13 @@
 </head>
 <body>
 
-    <p>workout program generator</p>
+    <h1>Workout Program Generator</h1>
+    <h2>available programs:</h2>
     <script type="text/javascript" src="{% static '/js/script.js' %}"></script>
+
+    {% for program in programs %}
+        <h3>{{ program.name }}</h3>
+    {% endfor %}
 
 </body>
 </html>

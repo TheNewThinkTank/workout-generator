@@ -1,8 +1,20 @@
 from django.shortcuts import render
 
+programs = [
+    {
+        "name": "full_body"
+    },
+    {
+        "name": "legs_workout"
+    },
+        ]
+
 
 def welcome_view(request):
-    return render(request, "index.html")
+    context = {
+        "programs": programs
+    }
+    return render(request, "index.html", context)
 
 
 def nfp_view(request):
