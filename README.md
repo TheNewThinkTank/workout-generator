@@ -25,19 +25,26 @@ Django
 - python manage.py runserver (runs at local port 8000)
 - Change port: python manage.py runserver 8080
 - python manage.py startapp workoutapp
-- cd myapp
+- cd - python manage.py startapp workoutapp
 - mkdir templates
 - cd templates
 - echo welcome page workout generator > index.html
 - Navigate to my project/myproject/settings.py
 - import os
 - update TEMPLATES[“DIRS”] with:
-- os.path.join(BASE_DIR, “myapp/templates“)
-- open myapp/views.py
+- os.path.join(BASE_DIR, "workoutapp/templates")
+- open workoutapp/views.py
 - A view is a function that receives a request and returns a response
 
 Run app: python manage.py runserver
-Then visit: http://127.0.0.1:8000/workoutapp/welcome_view/
+Then visit:
+
+http://127.0.0.1:8000/workoutapp/welcome_view/
+
+http://127.0.0.1:8000/workoutapp/nfp_view/
+
+http://127.0.0.1:8000/workoutapp/legs_view/
+
 
 Run with Docker:
 docker build --tag python-django .
