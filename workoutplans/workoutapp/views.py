@@ -22,4 +22,4 @@ def nfp_view(request):
 
 
 def legs_view(request):
-    return render(request, "legs_workout.html")
+    return render(request, "legs_workout.html", {"title": "LEGS"})

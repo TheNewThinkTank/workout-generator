@@ -4,7 +4,15 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
+
+    {% if title %}
+        <title>Workout Program - {{ title }}</title>
+    {% else %}
+        <title>Workout Program</title>
+    {% endif %}
+
     <script type="text/javascript" src="{% static '/js/table.js' %}" defer></script>
+
   </head>
   <body>
     <h2>Date:</h2>
