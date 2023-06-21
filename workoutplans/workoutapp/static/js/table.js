@@ -1,6 +1,16 @@
 tableStyle = `
       <style>
 
+      .row {
+        display: flex;
+      }
+    
+      /* Create two equal columns that sits next to each other */
+      .column {
+        flex: 50%;
+        padding: 10px;
+      }
+
       .exercise_name {
         display: grid;
         place-items: center;
