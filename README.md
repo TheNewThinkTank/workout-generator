@@ -7,23 +7,6 @@ Create a django view that takes a program generation request and returns a html 
 fix url: http://127.0.0.1:8000/workoutapp/nfp_view/
 
 Django
-- django-admin startproject workoutplans
-- python manage.py runserver (runs at local port 8000)
-- Change port: python manage.py runserver 8080
-- python manage.py startapp workoutapp
-- cd - python manage.py startapp workoutapp
-- mkdir templates
-- cd templates
-- echo welcome page workout generator > index.html
-- Navigate to my project/myproject/settings.py
-- import os
-- update TEMPLATES[“DIRS”] with:
-- os.path.join(BASE_DIR, "workoutapp/templates")
-- open workoutapp/views.py
-- A view is a function that receives a request and returns a response
-
-Run app: python manage.py runserver
-Then visit:
 
 http://127.0.0.1:8000/workoutapp/welcome_view/
 
