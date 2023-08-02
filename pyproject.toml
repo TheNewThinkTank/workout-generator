@@ -5,7 +5,7 @@ description = "generate training programs for your strength workouts"
 authors = ["Gustav Collin Rasmussen"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "workout_generator"}]
+packages = []  # {include = "workout_generator"}
 
 [tool.poetry.dependencies]
 python = "^3.11"
