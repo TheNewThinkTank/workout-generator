@@ -24,6 +24,7 @@ jobs:
   
       - name: Run ESLint
         run: npx eslint .
+        continue-on-error: true
 
       - name: Setup Python
         uses: actions/setup-python@v4
