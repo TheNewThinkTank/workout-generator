@@ -23,7 +23,7 @@ jobs:
         run: npm install
   
       - name: Run ESLint
-        run: npm run lint
+        run: npm run eslint
 
       - name: Setup Python
         uses: actions/setup-python@v4
