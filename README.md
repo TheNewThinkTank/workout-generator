@@ -12,14 +12,15 @@ fix url: http://127.0.0.1:8000/workoutapp/nfp_view/
 
 Django
 
+URLs:
 http://127.0.0.1:8000/workoutapp/welcome_view/
-
 http://127.0.0.1:8000/workoutapp/nfp_view/
-
 http://127.0.0.1:8000/workoutapp/legs_view/
-
 
 Run with Docker:
 docker build --tag python-django .
 docker run --publish 8000:8000 python-django
+
+with docker-compose:
+
 -->
