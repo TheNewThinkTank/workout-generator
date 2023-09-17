@@ -82,7 +82,7 @@ class NfpSetsTable extends HTMLElement {
 
   connectedCallback () {
     const split = parseInt(this.getAttribute('split'))
-    var SPLIT = splits.get(split)
+    const SPLIT = splits.get(split)
 
     let tableHtml = `
     <h2 class="exercise_name">${SPLIT.get(this.getAttribute('exercise'))}</h2>
@@ -95,9 +95,9 @@ class NfpSetsTable extends HTMLElement {
         </tr>
       </thead>
       <tbody>
-      `;
+      `
 
-    let numberOfSets = parseInt(this.getAttribute('numberOfSets'))
+    const numberOfSets = parseInt(this.getAttribute('numberOfSets'))
 
     for (let i = 1; i <= numberOfSets; i++) {
       tableHtml += `<tr>
@@ -111,11 +111,10 @@ class NfpSetsTable extends HTMLElement {
     tableHtml += `
     </tbody>
     </table>
-    `;
+    `
 
     this.innerHTML = tableStyle + tableHtml
-
-  }
+    }
 }
 
-customElements.define('nfp-table-component', NfpSetsTable);
+customElements.define('nfp-table-component', NfpSetsTable)
