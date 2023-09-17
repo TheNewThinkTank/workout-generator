@@ -1,1 +1,1 @@
-console.log("workout generator");
+console.log('workout generator')

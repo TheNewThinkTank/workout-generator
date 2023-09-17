@@ -115,7 +115,7 @@ class NfpSetsTable extends HTMLElement {
 
     this.innerHTML = tableStyle + tableHtml
 
-    return
+    // return
   }
 }
 
