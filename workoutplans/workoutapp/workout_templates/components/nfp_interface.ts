@@ -1,16 +1,16 @@
 // TODO: add npx eslint nfp_interface.ts to GitHub Actions workflow
 
 interface NfpWorkout {
-  LegExercise1: string;
-  LegExercise2: string;
-  LegExercise3: string;
-  BackExercise1: string;
-  ChestExercise1: string;
-  ShoulderExercise1: string;
-  TrapsExercise1: string;
-  AbsExercise1: string;
-  ArmExercise1: string;
-  ArmExercise2: string;
+  LegExercise1: string,
+  LegExercise2: string,
+  LegExercise3: string,
+  BackExercise1: string,
+  ChestExercise1: string,
+  ShoulderExercise1: string,
+  TrapsExercise1: string,
+  AbsExercise1: string,
+  ArmExercise1: string,
+  ArmExercise2: string,
 }
 
 const QuadExercises = [
