@@ -20,7 +20,7 @@ const QuadExercises = [
   'hack_squat',
   'leg_press',
   'walking_barbell_lunge',
-];
+]
 
 const HamstringExercises = [
   'deadlift',
@@ -28,12 +28,12 @@ const HamstringExercises = [
   'straight_leg_deadlift',
   'sumo_deadlift',
   'leg_curl',
-];
+]
 
 const CalfExercises = [
   'standing_calf_raise',
   'seated_calf_raise',
-];
+]
 
 const BackExercises = [
   'chin_up',
@@ -41,7 +41,7 @@ const BackExercises = [
   'lat_pulldown',
   'seated_row',
   'single_arm_bent_over_db_row',
-];
+]
 
 const ChestExercises = [
   'barbell_bench_press',
@@ -49,7 +49,7 @@ const ChestExercises = [
   'db_flys',
   'cable_crossover',
   'pullover',
-];
+]
 
 const ShoulderExercises = [
   'military_press',
@@ -57,12 +57,12 @@ const ShoulderExercises = [
   'db_rear_lateral_raises',
   'db_front_raises',
   'arnold_press',
-];
+]
 
 const TrapsExercises = [
   'barbell_shrug',
   'face_pull',
-];
+]
 
 const AbsExercises = [
   'crunch',
@@ -70,14 +70,14 @@ const AbsExercises = [
   'hanging_leg_raise',
   'side_jackknife',
   'side_crunch',
-];
+]
 
 const TricepsExercises = [
   'skull_crusher',
   'french_press',
   'cable_extention',
   'kickback',
-];
+]
 
 const BicepsExercises = [
   'ez_bar_curl',
@@ -85,7 +85,7 @@ const BicepsExercises = [
   'incline_curl',
   'preacher_curl',
   'alternating_db_curl',
-];
+]
 
 const split1: NfpWorkout = {
   LegExercise1: '1. ' + QuadExercises[0],
@@ -98,7 +98,7 @@ const split1: NfpWorkout = {
   AbsExercise1: '8. ' + AbsExercises[0],
   ArmExercise1: '9. ' + TricepsExercises[0],
   ArmExercise2: '10. ' + BicepsExercises[0],
-};
+}
 
 const split2: NfpWorkout = {
   LegExercise1: '1. ' + QuadExercises[1],
@@ -111,7 +111,7 @@ const split2: NfpWorkout = {
   AbsExercise1: '8. ' + AbsExercises[1],
   ArmExercise1: '9. ' + TricepsExercises[1],
   ArmExercise2: '10. ' + BicepsExercises[1],
-};
+}
 
 const split3: NfpWorkout = {
   LegExercise1: '1. ' + QuadExercises[2],
@@ -124,7 +124,7 @@ const split3: NfpWorkout = {
   AbsExercise1: '8. ' + AbsExercises[2],
   ArmExercise1: '9. ' + TricepsExercises[2],
   ArmExercise2: '10. ' + BicepsExercises[2],
-};
+}
 
 const split4: NfpWorkout = {
   LegExercise1: '1. ' + QuadExercises[3],
@@ -137,7 +137,7 @@ const split4: NfpWorkout = {
   AbsExercise1: '8. ' + AbsExercises[3],
   ArmExercise1: '9. ' + TricepsExercises[3],
   ArmExercise2: '10. ' + BicepsExercises[3],
-};
+}
 
 const split5: NfpWorkout = {
   LegExercise1: '1. ' + QuadExercises[4],
@@ -150,4 +150,4 @@ const split5: NfpWorkout = {
   AbsExercise1: '8. ' + AbsExercises[4],
   ArmExercise1: '9. ' + TricepsExercises[0],
   ArmExercise2: '10. ' + BicepsExercises[4],
-};
+}
