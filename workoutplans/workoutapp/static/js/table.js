@@ -45,7 +45,9 @@ class SetsTable extends HTMLElement {
   //   super()
   // }
 
+  /* eslint-disable */
   connectedCallback () {
+    /* eslint-enable */
     let tableHtml = `
     <h2 class="exercise_name">${this.getAttribute('exercise')}</h2>
     <table class="GeneratedTable">
