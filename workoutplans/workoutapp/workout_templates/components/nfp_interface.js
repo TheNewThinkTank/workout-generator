@@ -2,35 +2,35 @@
 var QuadExercises = [
     'squat',
     'leg_extention',
-];
+]
 var HamstringExercises = [
     'deadlift',
-];
+]
 var CalfExercises = [
     'standing_calf_raise',
-];
+]
 var BackExercises = [
     'machine_bentover_row',
-];
+]
 var ChestExercises = [
     'barbell_bench_press',
-];
+]
 var ShoulderExercises = [
     'military_press',
-];
+]
 var TrapsExercises = [
     'barbell_shrug',
     'face_pull',
-];
+]
 var AbsExercises = [
     'crunch',
-];
+]
 var TricepsExercises = [
     'french_press',
-];
+]
 var BicepsExercises = [
     'ez_bar_curl',
-];
+]
 var split1 = {
     LegExercise1: '1. ' + QuadExercises[0],
     LegExercise2: '2. ' + HamstringExercises[0],
@@ -42,7 +42,7 @@ var split1 = {
     AbsExercise1: '8. ' + AbsExercises[0],
     ArmExercise1: '9. ' + TricepsExercises[0],
     ArmExercise2: '10. ' + BicepsExercises[0]
-};
+}
 var split2 = {
     LegExercise1: '1. ' + QuadExercises[1],
     LegExercise2: '2. ' + HamstringExercises[1],
@@ -54,5 +54,6 @@ var split2 = {
     AbsExercise1: '8. ' + AbsExercises[1],
     ArmExercise1: '9. ' + TricepsExercises[1],
     ArmExercise2: '10. ' + BicepsExercises[1]
-};
+}
+
 // console.log(split1);
