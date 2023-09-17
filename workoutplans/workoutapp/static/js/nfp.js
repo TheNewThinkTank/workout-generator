@@ -76,47 +76,47 @@ tableStyle = `
 `
 
 class NfpSetsTable extends HTMLElement {
-    constructor() {
-      super();
-    }
+  constructor() {
+    super();
+  }
 
-    connectedCallback() {
+  connectedCallback() {
 
-      let split = parseInt(this.getAttribute('split'))
-      var SPLIT = splits.get(split)
+    let split = parseInt(this.getAttribute('split'))
+    var SPLIT = splits.get(split)
 
-      let tableHtml = `
-      <h2 class="exercise_name">${SPLIT.get(this.getAttribute('exercise'))}</h2>
-      <table class="GeneratedTable">
-        <thead>
-          <tr>
-            <th>set_number</th>
-            <th>reps</th>
-            <th>weight / kg</th>
-          </tr>
-        </thead>
-        <tbody>
-        `;
-
-      let numberOfSets = parseInt(this.getAttribute('numberOfSets'))
-
-      for (let i = 1; i <= numberOfSets; i++) {
-        tableHtml += `<tr>
-        <td class="exercise_name"><strong>${i}</strong></td>
-        <td></td>
-        <td></td>
-      </tr>
-      `
-      }
-
-      tableHtml += `
-      </tbody>
-      </table>
+    let tableHtml = `
+    <h2 class="exercise_name">${SPLIT.get(this.getAttribute('exercise'))}</h2>
+    <table class="GeneratedTable">
+      <thead>
+        <tr>
+          <th>set_number</th>
+          <th>reps</th>
+          <th>weight / kg</th>
+        </tr>
+      </thead>
+      <tbody>
       `;
 
-      this.innerHTML = tableStyle + tableHtml
+    let numberOfSets = parseInt(this.getAttribute('numberOfSets'))
 
+    for (let i = 1; i <= numberOfSets; i++) {
+      tableHtml += `<tr>
+      <td class="exercise_name"><strong>${i}</strong></td>
+      <td></td>
+      <td></td>
+    </tr>
+    `
     }
+
+    tableHtml += `
+    </tbody>
+    </table>
+    `;
+
+    this.innerHTML = tableStyle + tableHtml
+
+  }
 }
 
 customElements.define('nfp-table-component', NfpSetsTable);
