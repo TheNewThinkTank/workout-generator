@@ -80,9 +80,8 @@ class NfpSetsTable extends HTMLElement {
   //   super();
   // }
 
-  connectedCallback() {
-
-    let split = parseInt(this.getAttribute('split'))
+  connectedCallback () {
+    const split = parseInt(this.getAttribute('split'))
     var SPLIT = splits.get(split)
 
     let tableHtml = `
