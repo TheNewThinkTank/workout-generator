@@ -41,12 +41,11 @@ tableStyle = `
 `
 
 class SetsTable extends HTMLElement {
-  constructor() {
-    super();
-  }
+  // constructor () {
+  //   super()
+  // }
 
-  connectedCallback() {
-
+  connectedCallback () {
     let tableHtml = `
     <h2 class="exercise_name">${this.getAttribute('exercise')}</h2>
     <table class="GeneratedTable">
@@ -58,9 +57,9 @@ class SetsTable extends HTMLElement {
         </tr>
       </thead>
       <tbody>
-      `;
+      `
 
-    let numberOfSets = parseInt(this.getAttribute('numberOfSets'))
+    const numberOfSets = parseInt(this.getAttribute('numberOfSets'))
 
     for (let i = 1; i <= numberOfSets; i++) {
       tableHtml += `<tr>
@@ -74,11 +73,10 @@ class SetsTable extends HTMLElement {
     tableHtml += `
     </tbody>
     </table>
-    `;
+    `
 
     this.innerHTML = tableStyle + tableHtml
-
   }
 }
 
-customElements.define('table-component', SetsTable);
+customElements.define('table-component', SetsTable)
