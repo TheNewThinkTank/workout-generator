@@ -76,9 +76,9 @@ tableStyle = `
 `
 
 class NfpSetsTable extends HTMLElement {
-  constructor() {
-    super();
-  }
+  // constructor () {
+  //   super();
+  // }
 
   connectedCallback() {
 
